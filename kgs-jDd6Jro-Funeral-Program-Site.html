@@ -1,0 +1,2449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Funeral Program Site</title>
+  <meta charset="utf-8">
+ <meta name="robots" content="noindex, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Funeral Program Site">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135007,135002,135000" rel="stylesheet">
+  <script async defer src="https://cdn.tailwindcss.com"></script>
+  
+  <script async defer type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap'></script>
+  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+  
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  
+  <link rel="stylesheet" href="https://js.arcgis.com/4.20/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.20/"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+  
+  
+  <style>
+    html {
+      background-color: #f3f3f3;
+    }
+
+    .wrapper {
+      max-width: 680px;
+       
+       
+    }
+
+    .youtube {
+      background-color: #000;
+      margin-bottom: 30px;
+      position: relative;
+      padding-top: 56.25%;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .youtube img {
+      width: 100%;
+      top: -16.82%;
+      left: 0;
+      opacity: 0.7;
+    }
+
+    .youtube .play-button {
+      width: 90px;
+      height: 60px;
+      background-color: #FF0000;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+      z-index: 1;
+      opacity: 0.8;
+      border-radius: 6px;
+    }
+
+    .youtube .play-button:before {
+      content: "";
+      border-style: solid;
+      border-width: 15px 0 15px 26.0px;
+      border-color: transparent transparent transparent #fff;
+    }
+
+    .youtube img,
+    .youtube .play-button {
+      cursor: pointer;
+    }
+
+    .youtube img,
+    .youtube iframe,
+    .youtube .play-button,
+    .youtube .play-button:before {
+      position: absolute;
+    }
+
+    .youtube .play-button,
+    .youtube .play-button:before {
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    .youtube iframe {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://g.co/kgs/jDd6Jro#org",
+      "name": "Funeral Program Site",
+      "url": "https://g.co/kgs/jDd6Jro",
+      "sameAs": [
+        "https://www.funeralprogramsite.com",
+        "https://www.pinterest.com/funeralsite/",
+        "https://www.youtube.com/@funeralprograms",
+        "https://g.co/kgs/knPX2H2",
+        "https://g.co/kgs/kNCdPbb",
+        "https://g.co/kgs/2Gjwc6d",
+        "https://g.co/kgs/7LwX5t7",
+        "https://g.co/kgs/H3oKBKG",
+        "https://g.co/kgs/f1tPVX8",
+        "https://g.co/kgs/qH6qUZG",
+        "https://g.co/kgs/t8mq1EN",
+        "https://g.co/kgs/Fzfa7LY",
+        "https://g.co/kgs/XvYQGbc",
+        "https://g.co/kgs/BKKoRUP",
+        "https://g.co/kgs/TLrZxye",
+        "https://g.co/kgs/RfvG1od",
+        "https://g.co/kgs/ZwTrmSY",
+        "https://g.co/kgs/cqb44Ys",
+        "https://g.co/kgs/DxGyLt3",
+        "https://g.co/kgs/TciCcoA",
+        "https://g.co/kgs/bPuhvFX",
+        "https://g.co/kgs/S2mq9qw"
+      ],
+      "mentions": [
+        "https://chatgpt.com/share/688cbace-9f18-8010-a6c1-4252001f5041",
+        "https://chatgpt.com/share/688d4ecb-dd64-8010-8bc2-3c918d62017b",
+        "https://chatgpt.com/share/688e919f-b31c-8010-8b4f-2b3ba6727c53",
+        "https://chatgpt.com/share/6891349d-f9b4-8010-b826-44af92c78209",
+        "https://chatgpt.com/share/68939d9b-a210-8010-bfff-f023acca24a9",
+        "https://chatgpt.com/share/6894b911-9bc0-8010-a9eb-ec8b6671dcab",
+        "https://chatgpt.com/share/6894c291-7d08-8010-a16b-1869cb05378e",
+        "https://chatgpt.com/share/6897e656-8ae4-8010-a584-fb53a0602a77",
+        "https://chatgpt.com/share/6898e017-8dec-8010-b784-2610325c9e33",
+        "https://chatgpt.com/share/689b5c16-0900-8010-9c8c-33a6edc7022b"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.shopify.com/s/files/1/0556/4258/7328/files/new.logo.png?v=1637719213"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://g.co/kgs/jDd6Jro#website",
+      "name": "Funeral Program Site",
+      "url": "https://g.co/kgs/jDd6Jro",
+      "publisher": { "@id": "https://g.co/kgs/jDd6Jro#org" }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://g.co/kgs/jDd6Jro#hub-funeral-programs",
+      "name": "Funeral Programs at Funeral Program Site",
+      "url": "https://g.co/kgs/jDd6Jro",
+      "inLanguage": "en",
+      "description": "A curated hub of funeral programs from Funeral Program Site, including design collections, related products, and video tutorials.",
+      "about": [
+        { "@type": "Thing", "name": "Funeral programs" },
+        { "@type": "Thing", "name": "Memorial service keepsakes" }
+      ],
+      "isPartOf": { "@id": "https://g.co/kgs/jDd6Jro#website" },
+      "publisher": { "@id": "https://g.co/kgs/jDd6Jro#org" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://g.co/kgs/jDd6Jro#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://g.co/kgs/jDd6Jro" },
+        { "@type": "ListItem", "position": 2, "name": "Funeral Programs", "item": "https://g.co/kgs/jDd6Jro" }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "AudioObject",
+  "name": "Hear the Highlights of The Funeral Program Site Funeral Program Templates",
+  "description": "Audio highlights describing The Funeral Program Site’s funeral program templates, showcasing features, customization, and personalization options.",
+  "url": "https://cdn.shopify.com/s/files/1/0556/4258/7328/files/funeral_program_templates_funeral_program_site.m4a?v=1758294615",
+  "contentUrl": "https://cdn.shopify.com/s/files/1/0556/4258/7328/files/funeral_program_templates_funeral_program_site.m4a?v=1758294615",
+  "encodingFormat": "audio/mp4",
+  "uploadDate": "2025-09-28",
+  "duration": "PT1M30S",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Funeral Program Site",
+    "url": "https://www.funeralprogramsite.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.funeralprogramsite.com/cdn/shop/files/funeral-program-site-logo.png"
+    }
+  }
+}
+</script>
+
+          <script type="text/javascript">
+    		  function openWindow(event) {
+            // Show the popup
+            var my_window;
+            var width = 900;
+            var height = 600;
+            var center_left = (screen.width / 2) - (width / 2);
+            var center_top = (screen.height / 2) - (height / 2);
+            my_window = window.open("https://storage.googleapis.com/fps2025/funeral-program-templates-collection.html", "Our Partners", "scrollbars=1, width="+width+", height="+height+", left="+center_left+", top="+center_top);
+            my_window.focus();
+          }
+          setTimeout(function () {
+  			    openWindow();
+  			  }, 9000);
+        </script>
+
+</head>
+
+<body class="antialiased bg-body text-body font-body">
+  <div class="">
+
+    
+    <section class="py-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class=" bg-white rounded-3xl">
+          <div class="flex flex-col justify-center">
+            <ul class="text-center">
+              <li class="inline-flex p-6"><a target="_self" class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#"
+                  contenteditable="false">Home</a></li>
+              <li class="inline-flex p-6"><a target="_self" class="inline-block text-gray-500 hover:text-gray-600 font-bold"
+                  href="#resources-images" contenteditable="false">Resources</a></li>
+              <li class="inline-flex p-6"><a target="_self" class="inline-block text-gray-500 hover:text-gray-600 font-bold"
+                  href="#essential-links" contenteditable="false">Links</a></li>
+                  <li class="inline-flex p-6"><a target="_self" class="inline-block text-gray-500 hover:text-gray-600 font-bold"
+                      href="#highlights" contenteditable="false">Highlights</a></li>
+              <li class="inline-flex p-6"><a target="_self" class="inline-block text-gray-500 hover:text-gray-600 font-bold"
+                  href="#contact-us">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="relative px-8 rounded-3xl">
+          <img src="https://lh3.googleusercontent.com/d/129OQdThR-HFtfoZouprXJakenmtALEUM" class="inset-0 w-full object-cover rounded-3xl" loading="lazy"></img>          
+          <div class="max-w-7xl mx-auto relative">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <section class="bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="mb-6">
+          <div class="px-8 py-10 bg-white overflow-hidden rounded-3xl">
+            <div class="text-center mx-auto">
+              <h1 class="font-heading mb-6 text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">
+                <span>Funeral Program Site</span>
+              </h1>
+              
+              <div class="max-w-lg mx-auto">
+                <div class="flex-wrap -m-2">
+                  <div class="w-full md:w-auto p-2">
+                    <div class="flex flex-wrap justify-center -m-2">
+                      <div class="w-full md:w-auto p-2"><a
+                          class="block w-full px-8 py-3.5 text-lg text-center text-white font-bold bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-200 rounded-full"
+                          target="_blank"
+                          href="https://g.co/kgs/jDd6Jro">Contact Us</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    
+    <section class="pt-6 pb-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center -m-4">
+          <div class="w-full md:w-1/5 p-4">
+            <div class="flex flex-col justify-top p-6 h-full text-center bg-white rounded-3xl">
+              <div class="">
+                <iframe src="https://drive.google.com/embeddedfolderview?id=1L0vCZInFFc0Ix3DEnyUi9ad0GYSNat9v" width="100%" height="550" frameborder="0" class="folder_embed" allowfullscreen="true" scrolling="no" loading="lazy" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-4/5 p-4">
+            <div class="flex flex-col justify-center items-center p-8 h-full text-center bg-white rounded-3xl">
+              <div class="">
+                <p class="mb-8 text-xl"><p>Memorial programs are an essential part of any service, offering both guidance for attendees and a lasting keepsake for families. The <a href="https://g.co/kgs/8S5tKav" target="_blank"><strong>Funeral Program Site</strong></a> makes it simple to design programs that are as meaningful as they are beautiful, ensuring every detail reflects the life being honored.</p><p><br></p><p>Families can choose from a variety of layouts, including bifold, trifold, and booklet styles, all crafted for ease of customization. At the <a href="https://g.co/kgs/MSsPGTZ" target="_blank"><strong>Funeral Program Site</strong></a>, each template is designed to balance readability with elegance, providing space for photographs, order of service, and heartfelt tributes.</p><p><br></p><p>Personalization is at the core of every memorial program from the <a href="https://g.co/kgs/XXGVhS2" target="_blank"><strong>Funeral Program Site</strong></a>. Families can include meaningful poems, scriptures, or favorite quotes alongside cherished images, creating a program that not only informs but also tells a life story in an inspiring way.</p><p><br></p><p>For those who need convenience, the <a href="https://g.co/kgs/C7c3XrQ" target="_blank"><strong>Funeral Program Site</strong></a> offers ready-made templates with pre-formatted layouts. Families simply add their own text and photos, saving valuable time while still producing a professional and polished memorial program.</p><p><br></p><p>Quality is a hallmark of the <a href="https://g.co/kgs/YmZ2LMh" target="_blank"><strong>Funeral Program Site</strong></a>. Each program is printed on durable materials with vivid colors and crisp text, ensuring that these keepsakes remain treasured for years to come. Families can feel confident they are receiving products crafted with care and excellence.</p><p><br></p><p>Ultimately, the <a href="https://g.co/kgs/CcSpZHi" target="_blank"><strong>Funeral Program Site</strong></a> provides more than just stationery—it offers families compassionate support and a way to celebrate a loved one’s legacy with dignity. Each memorial program becomes a bridge between grief and remembrance, preserving memories in a format that will be cherished for generations.</p><p><br></p><p>Also see:</p><p><a href="https://g.co/kgs/cEf48Ca" target="_blank">The Funeral Program Site</a></p><p><a href="https://g.co/kgs/33Q3hDX" target="_blank">Funeral Program Site</a></p><p><a href="https://g.co/kgs/HhPXYX9" target="_blank">Funeral Site</a></p><p><a href="https://g.co/kgs/mMWfJM6" target="_blank">The Funeral Site</a></p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section id="resources-images" class="py-10 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="py-16 px-8 bg-white rounded-3xl">
+          <div class="max-w-7xl mx-auto">
+            <div class="mb-12 md:max-w-4xl mx-auto text-center">
+              <h2 class="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">
+                Resources</h2>
+            </div>
+            <div class="flex flex-wrap -mx-4 -mb-4 md:mb-0">
+              <div class="w-full md:w-4/5 md:mb-0">
+                
+                <div class="flex flex-wrap -m-4 mb-6">
+                  <div class="w-full md:w-1/3 p-4">
+                    <div class="h-full rounded-3xl">
+                      <img class="w-full rounded-3xl" src="https://lh3.googleusercontent.com/d/1TrOV0czMTA_JrYitDTPBar3I8NN4akJF" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/3 p-4">
+                    <div class="h-full rounded-3xl">
+                      <img class="w-full rounded-3xl" src="https://lh3.googleusercontent.com/d/1VcPyrjpAGCPpFgSPSeF7Vc6vxvcUI8i8" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/3 p-4">
+                    <div class="h-full rounded-3xl">
+                      <img class="w-full rounded-3xl" src="https://lh3.googleusercontent.com/d/1HLVw7lxfxbS_6pKWuqao_9W0UngHXdO3" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="flex flex-wrap -m-4 mb-6">
+                  <div class="w-full md:w-1/3 p-4">
+                    <div class="h-full rounded-3xl">
+                      <img class="w-full rounded-3xl" src="https://lh3.googleusercontent.com/d/1Cz-kAJFAxKy2hn-LRWKrAhk1oD7j5j0k" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/3 p-4">
+                    <div class="h-full rounded-3xl">
+                      <img class="w-full rounded-3xl" src="https://lh3.googleusercontent.com/d/1Gq4BLJsnqICe1PX4hMe--ko-CyCtHe6P" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/3 p-4">
+                    <div class="h-full rounded-3xl">
+                      
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="w-full md:w-1/5 md:mb-0">
+                <div class="flex flex-col justify-top p-6 h-full text-center bg-white rounded-3xl">
+                  <iframe src="https://drive.google.com/embeddedfolderview?id=1_zJipFcKE53us_u56jQ_2WZhYYUvV1JR" width="100%" height="550" frameborder="0" class="folder_embed" allowfullscreen="true" scrolling="no" loading="lazy" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <section class="pt-6 pb-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="mb-6">
+          <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+            <div class="text-center mx-auto">
+              <iframe src="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/view" width="100%" height="800" frameborder="0" class="folder_embed" allowfullscreen="true" scrolling="no" loading="lazy" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section class="py-10 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="py-16 px-8 bg-white rounded-3xl">
+          <div class="max-w-7xl mx-auto">
+            <div class="mb-12 md:max-w-4xl mx-auto text-center">
+              <h2 class="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">
+                Videos</h2>
+            </div>
+            
+            <div class="flex flex-wrap -m-4 mb-6">
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full rounded-3xl">
+                  <div class="wrapper">
+                    <div class="youtube rounded-3xl" data-embed="It9Qd_QQgk4"><div class="play-button"></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full rounded-3xl">
+                  <div class="wrapper">
+                    <div class="youtube rounded-3xl" data-embed="0QLVtqemS3I"><div class="play-button"></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full rounded-3xl">
+                  <div class="wrapper">
+                    <div class="youtube rounded-3xl" data-embed="HExuAmcsEik"><div class="play-button"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap -m-4 mb-6">
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full rounded-3xl">
+                  <div class="wrapper">
+                    <div class="youtube rounded-3xl" data-embed="WWvfEYAqgXA"><div class="play-button"></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full rounded-3xl">
+                  <div class="wrapper">
+                    <div class="youtube rounded-3xl" data-embed="2tXhzby9T9s"><div class="play-button"></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full rounded-3xl">
+                  <div class="wrapper">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <section id="essential-links" class="pt-6 pb-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4 flex flex-wrap">
+        <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
+          
+      <iframe src="https://docs.google.com/forms/d/1-vjvkJTmSw6ACKH73G-JgIaCwODdlWOMr69U46denjE/viewform?embedded=true"
+      width="100%" height="1600" frameborder="0" class="folder_embed"
+      allowfullscreen="true" loading="lazy"
+      mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      <!-- Div para o mapa -->
+      <div id="GoogleMap" style="position:relative;width:100%;height:800px;"></div>
+
+      <script type='text/javascript'>
+          function initMap() {
+              // Inicializar o mapa
+              const map = new google.maps.Map(document.getElementById('GoogleMap'), {
+                  center: { lat: 33.2005615, lng: -96.7089992 },
+                  zoom: 13
+              });
+
+              // Coordenadas GPS do local
+              const location = { lat: 33.2005615, lng: -96.7089992 };
+
+              // Criar o marcador (pino) com ícone padrão ou personalizado
+              const marker = new google.maps.Marker({
+                  position: location,
+                  map: map,
+                  title: 'Funeral Program Site',
+              });
+
+              // Criar a InfoWindow com os detalhes do negócio e personalizar a largura e altura
+              const infoWindowContent = `
+                  <div style="width: 300px; height: 80px; overflow: auto;">
+                      <strong>Funeral Program Site</strong><br>
+                      <strong>Address:</strong> 6710 Virginia Parkway #215-120, McKinney Texas 75071<br>
+                      <strong>Phone:</strong> 214-548-5418<br>
+                      <a href="https://g.co/kgs/jDd6Jro" target="_blank">Funeral Program Site</a>
+                  </div>
+              `;
+
+              const infoWindow = new google.maps.InfoWindow({
+                  content: infoWindowContent
+              });
+
+              // Abrir a InfoWindow automaticamente ao carregar o mapa
+              infoWindow.open(map, marker);
+
+              // Mostrar a InfoWindow novamente quando o marcador for clicado
+              marker.addListener('click', () => {
+                  infoWindow.open(map, marker);
+              });
+          }
+
+          // Garantir que o mapa seja carregado após a página estar completamente carregada
+          window.addEventListener('load', function() {
+              initMap();
+          });
+      </script>
+    <br>
+
+          <!-- Div para o mapa -->
+          <div id="BingMap" style="position:relative;width:100%;height:600px;"></div>
+
+          <script type='text/javascript'>
+              const GetMap = () => {
+                  // Inicializar o mapa
+                  const map = new Microsoft.Maps.Map('#BingMap', {
+                      center: new Microsoft.Maps.Location(33.2005615, -96.7089992), 
+                      zoom: 13,
+                      showZoomButtons: true
+                  });
+
+                  // Coordenadas GPS do local
+                  const location = new Microsoft.Maps.Location(33.2005615, -96.7089992);
+
+                  // Criar o pino
+                  const pin = new Microsoft.Maps.Pushpin(location, {
+                      title: 'Funeral Program Site', 
+                      subTitle: 'Funeral Program Site',
+                      text: 'Funeral Program Site'  
+                  });
+
+                  // Adicionar o pino ao mapa
+                  map.entities.push(pin);
+
+                  // Criar um balão de informações (infobox) com mais detalhes
+                  const infobox = new Microsoft.Maps.Infobox(location, {
+                      title: 'Funeral Program Site', 
+                      description: '<strong>Address:</strong> 6710 Virginia Parkway #215-120, McKinney Texas 75071<br>' +
+                                   '<strong>Phone:</strong> 214-548-5418<br>' +
+                                   '<a href="https://g.co/kgs/jDd6Jro" target="_blank">Funeral Program Site</a>', 
+                      visible: true
+                  });
+
+                  // Associar o infobox ao mapa
+                  infobox.setMap(map);
+
+                  // Mostrar o infobox quando o pino for clicado
+                  Microsoft.Maps.Events.addHandler(pin, 'click', () => {
+                      infobox.setOptions({ visible: true });
+                  });
+
+                  
+                  // Evento que é disparado quando o mapa está completamente carregado
+                  Microsoft.Maps.Events.addHandler(map, 'viewchangeend', () => {
+                       // 
+                      document.querySelector('.infobox-body').style.height = '130px';
+                      document.querySelector('.infobox-body').style.maxHeight = '130px';
+                      // Escondendo a seta da infobox
+                      const infoboxPointer = document.querySelector('.infobox-stalk');
+                      if (infoboxPointer) {
+                          infoboxPointer.style.display = 'none';
+                      }
+                  });
+                  
+              }
+              
+              // Garantir que o mapa seja carregado após a página estar completamente carregada
+              window.addEventListener('load', function() {
+                  GetMap();
+              });
+          </script>
+      <br>
+      <!-- Div para o mapa -->
+      <div id="leafmap" style="position:relative;width:100%;height:600px;"></div>
+
+      <script>
+        // Inicializar o mapa
+        var map = L.map('leafmap').setView([33.2005615, -96.7089992], 13);
+
+        // Usar o OpenStreetMap como camada base
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Coordenadas GPS do local
+        var marker = L.marker([33.2005615, -96.7089992]).addTo(map);
+
+        // Criar o balão de informações (popup) com mais detalhes
+        marker.bindPopup("<b>Funeral Program Site</b><br><strong>Address:</strong> 6710 Virginia Parkway #215-120, McKinney Texas 75071<br><strong>Phone:</strong> 214-548-5418<br><a href='https://g.co/kgs/jDd6Jro' target='_blank'>Funeral Program Site</a>").openPopup();
+
+      </script>
+    <br>
+      <div id="viewDiv" style="position:relative;width:100%;height:600px;"></div>
+
+      <script>
+        require([
+          "esri/Map", 
+          "esri/views/MapView", 
+          "esri/Graphic", 
+          "esri/PopupTemplate"
+        ], function(Map, MapView, Graphic, PopupTemplate) {
+          var map = new Map({
+            basemap: "streets"
+          });
+
+          var view = new MapView({
+            container: "viewDiv",
+            map: map,
+            center: [-96.7089992, 33.2005615],
+            zoom: 13
+          });
+
+          var point = {
+            type: "point",
+            longitude: -96.7089992,
+            latitude: 33.2005615
+          };
+
+          var markerSymbol = {
+            type: "simple-marker",
+            color: [226, 119, 40],
+            outline: {
+              color: [255, 255, 255],
+              width: 2
+            }
+          };
+
+          var popupTemplate = new PopupTemplate({
+            title: "Funeral Program Site",
+            content: '<strong>Address:</strong> 6710 Virginia Parkway #215-120, McKinney Texas 75071<br>' +
+                     '<strong>Phone:</strong> 214-548-5418<br>' +
+                     '<a href="https://g.co/kgs/jDd6Jro" target="_blank">Funeral Program Site</a>'
+          });
+
+          var pointGraphic = new Graphic({
+            geometry: point,
+            symbol: markerSymbol,
+            popupTemplate: popupTemplate
+          });
+
+          view.graphics.add(pointGraphic);
+
+          view.when(function() {
+            view.popup.open({
+              location: pointGraphic.geometry,
+              title: "Funeral Program Site",
+              content: '<strong>Address:</strong> 6710 Virginia Parkway #215-120, McKinney Texas 75071<br>' +
+                       '<strong>Phone:</strong> 214-548-5418<br>' +
+                       'Coordenadas: ' + pointGraphic.geometry.longitude + ', ' + pointGraphic.geometry.latitude + '<br>' +
+                       '<a href="https://g.co/kgs/jDd6Jro" target="_blank">Funeral Program Site</a>'
+            });
+          });
+        });
+      </script>
+    <br>
+      <!-- Div para o mapa -->
+      <div id="map" style="width:100%; height:600px;"></div>
+
+      <style>
+        .popup {
+          position: absolute;
+          background-color: white;
+          padding: 10px;
+          border: 1px solid black;
+          border-radius: 5px;
+          min-width: 250px;
+        }
+      </style>
+
+      <script type="text/javascript">
+        var map = new ol.Map({
+          target: 'map',
+          layers: [
+            new ol.layer.Tile({
+              source: new ol.source.OSM() // OpenStreetMap como fonte de tiles
+            })
+          ],
+          view: new ol.View({
+            center: ol.proj.fromLonLat([-96.7089992, 33.2005615]),
+            zoom: 13
+          })
+        });
+
+        // Adicionando o marcador
+        var markerElement = document.createElement('div');
+        markerElement.style.backgroundColor = 'red';
+        markerElement.style.width = '10px';
+        markerElement.style.height = '10px';
+        markerElement.style.borderRadius = '50%';
+
+        var marker = new ol.Overlay({
+          position: ol.proj.fromLonLat([-96.7089992, 33.2005615]),
+          positioning: 'center-center',
+          element: markerElement
+        });
+        map.addOverlay(marker);
+
+        // Criando o popup com conteúdo dinâmico
+        var popupElement = document.createElement('div');
+        popupElement.className = 'popup';
+        popupElement.innerHTML = `
+          <b>Funeral Program Site</b><br>
+          <strong>Endereço:</strong> 6710 Virginia Parkway #215-120, McKinney Texas 75071<br>
+          <strong>Telefone:</strong> 214-548-5418<br>
+          <a href='https://g.co/kgs/jDd6Jro' target='_blank'>Visite Funeral Program Site</a>`;
+
+        var popup = new ol.Overlay({
+          element: popupElement,
+          positioning: 'top-center',
+          stopEvent: false,
+          position: ol.proj.fromLonLat([-96.7089992, 33.2005615])
+        });
+
+        map.addOverlay(popup);
+
+        // Exibe o popup quando o mapa é carregado
+        window.addEventListener('load', function() {
+          popupElement.style.display = 'block';
+        });
+      </script>
+    <br>
+        </div>
+        <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
+          
+          <div class="flex flex-col justify-top p-6 h-full text-center bg-white rounded-3xl">
+            <div class="w-full p-4">
+              <div class=""><span class="inline-block mb-1 text-sm text-blue-500 font-bold uppercase tracking-widest"
+                  contenteditable="false">information</span>
+                <h2 class="font-heading mb-10 text-4xl text-gray-900 font-black tracking-tight"><span
+                    contenteditable="false">Links</span></h2>
+              </div>
+              <div class="flex flex-wrap">
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="" target="_blank"></a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://g.co/kgs/jDd6Jro" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/drive/folders/1L0vCZInFFc0Ix3DEnyUi9ad0GYSNat9v?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.funeralprogramsite.com/blogs/articles.atom" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.funeralprogram-site.com/blogs/news.atom" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/drive/folders/1QczA7Nyf-9iG3t3klapZDS8-JoVVIvoi?usp=sharing" target="_blank">Funeral Program Site Articles</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/drive/folders/1_zJipFcKE53us_u56jQ_2WZhYYUvV1JR?usp=sharing" target="_blank">Funeral Program Site Photos</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/drive/folders/1598aqxpQL8cac5G0BLV5hlU1e6chrwkS?usp=sharing" target="_blank">Funeral Program Site PDFs</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/drive/folders/1b34upqBCihvvp6zT2nGnFMUV392oJGD7?usp=sharing" target="_blank">Funeral Program Site Slides</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1TrOV0czMTA_JrYitDTPBar3I8NN4akJF/view?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1VcPyrjpAGCPpFgSPSeF7Vc6vxvcUI8i8/view?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1HLVw7lxfxbS_6pKWuqao_9W0UngHXdO3/view?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1Cz-kAJFAxKy2hn-LRWKrAhk1oD7j5j0k/view?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1Gq4BLJsnqICe1PX4hMe--ko-CyCtHe6P/view?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/edit?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/view" target="_blank">Funeral Program Site pubhtml</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/forms/d/1-vjvkJTmSw6ACKH73G-JgIaCwODdlWOMr69U46denjE/edit?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/drawings/d/1EpTywmPq4hPETOCqUJ4IeT3hGzR2w1i-W8Cy1FRGOLs/edit?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/129OQdThR-HFtfoZouprXJakenmtALEUM/view?usp=drivesdk" target="_blank">CTA or Logo</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://g.co/kgs/jDd6Jro" target="_blank">CTA or Logo - image link</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/document/d/1JLKTLoSy47GNnmGW-07U2PFSoWQ9jyCw73J803yCqmg/edit?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/document/d/1JLKTLoSy47GNnmGW-07U2PFSoWQ9jyCw73J803yCqmg/view" target="_blank">Funeral Program Site view</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/presentation/d/18A6LJWlWHbh-PGxbHFgfTvalMUQ53Rxh1F_bwiVR3c8/edit?usp=sharing" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/presentation/d/18A6LJWlWHbh-PGxbHFgfTvalMUQ53Rxh1F_bwiVR3c8/view" target="_blank">Funeral Program Site view</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/presentation/d/18A6LJWlWHbh-PGxbHFgfTvalMUQ53Rxh1F_bwiVR3c8/htmlpresent" target="_blank">Funeral Program Site html</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://calendar.google.com/calendar/embed?src=76ff01d0f977c617e93d1fbcc9af7a46df8e869b6cb4b97b02eddad8ae71a97d@group.calendar.google.com" target="_blank">Calendar - Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=bGtqcTJkNGg2dHZuYjVucDVlbTNsYjBpMHMgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=aWYxMmFlN2NxZHB2MmxoN2Q0MThrajRydGsgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=YmV0YzYwYWNwMmJmdWdjazR1YnJtdmVmcGcgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=NTVlbzMxMGoza2MxbjZyOGp2dDhwZWFnMzggNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=ZjlrMGtwMHBpM2NhcnJlb3FnMGM3dWZvMW8gNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=Y2tudGRsZmZ1bzA5Yjl0MzZwNmhnYzJuNm8gNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=cHB0OXJqZnVuZDRjYWNwN3JtdGRjN2w4cm8gNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=NTdnNnZqbmZ0cTkyc3VudnZydjZhcnY1N3MgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=dG1sODZkbWtramswaTBoNHVxZTdqNjNkaWsgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=b2ducDY2dXRwajAzaDY0MG45a3Boc25iMTAgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=Njk5azVnZmZnYmhscm8wbmc4MXBpNTVnc28gNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=YWtsY2YxcG1mOHNhMjZranQ3bW9vczJzdDAgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=NnFjc2FtazBxb2RudThkYTNtYWI4OG4zZzAgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=ZnZzdGhjOWFxYTMxMXIxMnFyMW9lbGtpNTQgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=MTZ0ajZoYWp1cThxbTFhNGU2bnAzcjZrbmcgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.google.com/calendar/event?eid=NGJqMzdmOGIyOGdwa2piNGRkbzdzazJtcTAgNzZmZjAxZDBmOTc3YzYxN2U5M2QxZmJjYzlhZjdhNDZkZjhlODY5YjZjYjRiOTdiMDJlZGRhZDhhZTcxYTk3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Calendar - Funeral Program Site - Event</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.youtube.com/watch?v=It9Qd_QQgk4" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.youtube.com/watch?v=0QLVtqemS3I" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.youtube.com/watch?v=HExuAmcsEik" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.youtube.com/watch?v=WWvfEYAqgXA" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://www.youtube.com/watch?v=2tXhzby9T9s" target="_blank">Funeral Program Site</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/edit#gid=0" target="_blank">Sheet1</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/edit#gid=1120100360" target="_blank">Keywords</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/edit#gid=1283752226" target="_blank">Content</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/edit#gid=2104533985" target="_blank">Calendar Events</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/edit#gid=1303100452" target="_blank">RSS Feeds</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/edit?disco=AAABroKVYKg" target="_blank">spreadsheet</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/drawings/d/1EpTywmPq4hPETOCqUJ4IeT3hGzR2w1i-W8Cy1FRGOLs/edit?disco=AAABroReGB8" target="_blank">drawing</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/document/d/1JLKTLoSy47GNnmGW-07U2PFSoWQ9jyCw73J803yCqmg/edit?disco=AAABrmWV32Y" target="_blank">document</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/presentation/d/18A6LJWlWHbh-PGxbHFgfTvalMUQ53Rxh1F_bwiVR3c8/edit?disco=AAABroBs7uM" target="_blank">presentation</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1rYhY5_4CjqpbA2wEK2RXzOYUp6fEko9N/view?usp=sharing" target="_blank">Funeral Program Site.rtf</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1KILNL-MhrhMri3Dt6yGDb4q7KmQxkXYE/view?usp=sharing" target="_blank">Funeral Program Site.txt</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1ttJroieZEkxq6kf2208EejeNPF_dmfqw/view?usp=sharing" target="_blank">Funeral Program Site-Funeral Program Site.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1OgIPCUoULgRryAAcE6pZvuL8tEML0d9z/view?usp=sharing" target="_blank">Funeral Program Site-Keywords.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1JlqYRi6NRERUERHy3ACES_PqnoUTpbZF/view?usp=sharing" target="_blank">Funeral Program Site-Content.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1by1Uw_4C7KPlDXkTNFO1_Q6G5VUwJ5Di/view?usp=sharing" target="_blank">Funeral Program Site-Calendar Events.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1Lhi0QNCtXMngQMMMzGSyBWgQyVHzyCmr/view?usp=sharing" target="_blank">Funeral Program Site-RSS Feeds.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1IfAP6R3DQJTVmAswZ1pz06cfxfra32J8/view?usp=sharing" target="_blank">Funeral Program Site.pdf</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/presentation/d/1pjPx93rnYnYKgA9BjtPC-iqOp4Q1m9iz/edit?usp=sharing&ouid=102851716294078502462&rtpof=true&sd=true" target="_blank">Funeral Program Site.pptx</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1L86Kk18AcC-bKOksqFQSUkiRb7IXoYB-/view?usp=sharing" target="_blank">Funeral Program Site.odp</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1otF5MbcQ3Ylla4y6-G3KKVuwxQXU2U3r/view?usp=sharing" target="_blank">Funeral Program Site.txt</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1g5grUFcdyfKI6CnmIIj8SHnmkorBK_tW/view?usp=sharing" target="_blank">Funeral Program Site.odt</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1k0qiRWj5u4eBko7DXU1-gZ8TXCX7HzCB/view?usp=sharing" target="_blank">Funeral Program Site.zip</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1FKM4uH1owU3uEqhRKFYwMG2ZTssEra6u/view?usp=sharing" target="_blank">Funeral Program Site.epub</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/document/d/1mz5aA2a7jNzKHDCN9_Dmm0LSAGc8neOd/edit?usp=sharing&ouid=102851716294078502462&rtpof=true&sd=true" target="_blank">Funeral Program Site.docx</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1-FvVZSpdHEt9c_Ewqztouuym3usYM4FA/view?usp=sharing" target="_blank">Funeral Program Site.pdf</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1dGDcWQkxvqhexa600P-WoVvB8PkXEfuR/view?usp=sharing" target="_blank">Funeral Program Site-Funeral Program Site.pdf</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1p9iknDhp-M8aiD8GFzjXOhBorcs5UvQI/view?usp=sharing" target="_blank">Funeral Program Site-Keywords.pdf</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/19N_60zq9rVJDNzWm1qZEe3Y1U5PyR1BY/view?usp=sharing" target="_blank">Funeral Program Site-Content.pdf</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1buCRzeT7e_Et9s71SxaG_R558mZO3qbz/view?usp=sharing" target="_blank">Funeral Program Site-Calendar Events.pdf</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/10xHV2MJ1vbkfJfQRrN52hH28USRS2gXU/view?usp=sharing" target="_blank">Funeral Program Site-RSS Feeds.pdf</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1SsgcOvNLUXLkhl6LqJiNElMiVrXyWOsC/view?usp=sharing" target="_blank">Funeral Program Site-Funeral Program Site.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/1nY00U0HLYorXy76hSDocGCG5GnNnd5oZ/edit?usp=sharing&ouid=102851716294078502462&rtpof=true&sd=true" target="_blank">Funeral Program Site-Funeral Program Site.xlsx</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1dZrOQFDB1yt5A0SZLauaY0n_gY-8pVr8/view?usp=sharing" target="_blank">Funeral Program Site-Keywords.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/1BLmeJCLFxXuKiJMNV1N7yjO1LIO9P_yJ/edit?usp=sharing&ouid=102851716294078502462&rtpof=true&sd=true" target="_blank">Funeral Program Site-Keywords.xlsx</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1XTPAPL0pUQEkD9z8OJ7jRqkTgnYfzPFG/view?usp=sharing" target="_blank">Funeral Program Site-Content.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/1gteEKP9nyFtw3l5PG3JTJv6A4ro0uiO-/edit?usp=sharing&ouid=102851716294078502462&rtpof=true&sd=true" target="_blank">Funeral Program Site-Content.xlsx</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1wyhRsN7mnP3Ji5bd-AEzJAzQmE0iIgLk/view?usp=sharing" target="_blank">Funeral Program Site-Calendar Events.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/1mzJBrYb02s1QNCrnTziiIcsl7ulTVozz/edit?usp=sharing&ouid=102851716294078502462&rtpof=true&sd=true" target="_blank">Funeral Program Site-Calendar Events.xlsx</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://drive.google.com/file/d/1-CUQ-IyqDljFkWYed06OIWzxM3tMmVTZ/view?usp=sharing" target="_blank">Funeral Program Site-RSS Feeds.ods</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w-auto p-2">
+                  <div class="flex flex-wrap px-3 py-2 bg-gray-100 rounded-full">
+                    <div class="w-auto mr-2 pt-1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.095 1H3.905C2.085 1 1 2.085 1 3.905V8.09C1 9.915 2.085 11 3.905 11H8.09C9.91 11 10.995 9.915 10.995 8.095V3.905C11 2.085 9.915 1 8.095 1ZM8.39 4.85L5.555 7.685C5.485 7.755 5.39 7.795 5.29 7.795C5.19 7.795 5.095 7.755 5.025 7.685L3.61 6.27C3.465 6.125 3.465 5.885 3.61 5.74C3.755 5.595 3.995 5.595 4.14 5.74L5.29 6.89L7.86 4.32C8.005 4.175 8.245 4.175 8.39 4.32C8.535 4.465 8.535 4.7 8.39 4.85Z"
+                          fill="#3B82F6"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-sm text-gray-900 font-bold"><a href="https://docs.google.com/spreadsheets/d/1j7BT_UNjq2FBSAP-Px9Oq3ixs-V2VkTV/edit?usp=sharing&ouid=102851716294078502462&rtpof=true&sd=true" target="_blank">Funeral Program Site-RSS Feeds.xlsx</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section class="py-10 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="py-16 px-8 bg-white rounded-3xl">
+          <div class="max-w-7xl mx-auto">
+            <div class="mb-12 md:max-w-4xl mx-auto text-center">
+              <h2 class="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">
+                Documents</h2>
+            </div>
+            <div class="flex flex-wrap -mx-4 -mb-4 md:mb-0">
+              <div class="w-full md:w-1/5 md:mb-0">
+                <div class="flex flex-col justify-top p-6 h-full text-center bg-white rounded-3xl">
+                  <iframe src="https://drive.google.com/embeddedfolderview?id=1QczA7Nyf-9iG3t3klapZDS8-JoVVIvoi" width="100%" height="550" frameborder="0" class="folder_embed" allowfullscreen="true" scrolling="no" loading="lazy" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+              </div>
+              <div class="w-full md:w-4/5 md:mb-0">
+                
+                <div class="flex flex-wrap -m-4 mb-6">
+                  <div class="w-full p-4">
+                    <div class="h-full rounded-3xl">
+                      <iframe src="https://docs.google.com/document/d/1JLKTLoSy47GNnmGW-07U2PFSoWQ9jyCw73J803yCqmg/view" width="100%" height="623" frameborder="0" loading="lazy" allowfullscreen="true" scrolling="yes" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    
+    <section class="py-10 overflow-hidden">
+
+      <div class="flex flex-wrap justify-center pb-10">
+        <div class="w-full md:w-auto p-2"><a
+            class="block w-full px-8 py-3.5 text-lg text-center text-white font-bold bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-200 rounded-full"
+            target="_blank"
+            href="https://g.co/kgs/jDd6Jro">Get a Quote</a>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4">
+        <div class="py-16 px-8 bg-white rounded-3xl">
+          <div class="max-w-7xl mx-auto">
+            <div class="mb-12 md:max-w-4xl mx-auto text-center">
+              <h2 class="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">
+                Presentations</h2>
+            </div>
+            <div class="flex flex-wrap -mx-4 -mb-4 md:mb-0">
+              <div class="w-full md:w-4/5 md:mb-0">
+                
+                <div class="flex flex-wrap -m-4 mb-6">
+                  <div class="w-full md:w-1/2 p-4">
+                    <div class="h-full rounded-3xl">
+                      <iframe src="https://docs.google.com/presentation/d/18A6LJWlWHbh-PGxbHFgfTvalMUQ53Rxh1F_bwiVR3c8/edit?usp=sharing" width="100%" height="523" loading="lazy"></iframe>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 p-4">
+                    <div class="h-full rounded-3xl">
+                      <iframe src="https://docs.google.com/presentation/d/18A6LJWlWHbh-PGxbHFgfTvalMUQ53Rxh1F_bwiVR3c8/embed?start=true&loop=true&delayms=3000&size=l" width="100%" height="323" frameborder="0" loading="lazy" allowfullscreen="true" scrolling="yes" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="w-full md:w-1/5 md:mb-0">
+                <div class="flex flex-col justify-top p-6 h-full text-center bg-white rounded-3xl">
+                  <iframe src="https://drive.google.com/embeddedfolderview?id=1b34upqBCihvvp6zT2nGnFMUV392oJGD7" width="100%" height="550" frameborder="0" class="folder_embed" allowfullscreen="true" scrolling="no" loading="lazy" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+        
+    
+    <section class="py-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="py-8 px-8 bg-white rounded-3xl">
+          <div class="max-w-7xl mx-auto">
+            <div class="mb-12 md:max-w-4xl mx-auto text-center">
+              <h2 class="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">
+                Scan</h2>
+            </div>
+            <div class="flex flex-wrap -m-4 mb-12">
+              
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full bg-gray-100 rounded-3xl pt-8">
+                  <a target="_blank" href="https://g.co/kgs/jDd6Jro">
+                    <img class="rounded-3xl mx-auto d-block" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://g.co/kgs/jDd6Jro" alt="" loading="lazy">
+                  </a>
+                  <div class="p-4">
+                    <p class="text-center text-sm text-gray-500 font-bold">Scan this QR Code</p>
+                    <a class="group block mb-4 p-4" target="_blank" href="https://g.co/kgs/jDd6Jro">
+                      <h3
+                        class="text-center font-heading text-2xl text-gray-900 hover:text-gray-700 group-hover:underline font-black">
+                        Funeral Program Site</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full bg-gray-100 rounded-3xl pt-8">
+                  <a target="_blank" href="https://drive.google.com/drive/folders/1L0vCZInFFc0Ix3DEnyUi9ad0GYSNat9v?usp=sharing">
+                    <img class="rounded-3xl mx-auto d-block" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://drive.google.com/drive/folders/1L0vCZInFFc0Ix3DEnyUi9ad0GYSNat9v?usp=sharing" alt="" loading="lazy">
+                  </a>
+                  <div class="p-4">
+                    <p class="text-center text-sm text-gray-500 font-bold">Scan this QR Code</p>
+                    <a class="group block mb-4 p-4" target="_blank" href="https://drive.google.com/drive/folders/1L0vCZInFFc0Ix3DEnyUi9ad0GYSNat9v?usp=sharing">
+                      <h3
+                        class="text-center font-heading text-2xl text-gray-900 hover:text-gray-700 group-hover:underline font-black">
+                        Funeral Program Site</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="w-full md:w-1/3 p-4">
+                <div class="h-full bg-gray-100 rounded-3xl pt-8">
+                  <a target="_blank" href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/view">
+                    <img class="rounded-3xl mx-auto d-block" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/view" alt="" loading="lazy">
+                  </a>
+                  <div class="p-4">
+                    <p class="text-center text-sm text-gray-500 font-bold">Scan this QR Code</p>
+                    <a class="group block mb-4 p-4" target="_blank" href="https://docs.google.com/spreadsheets/d/13QJ__sIBwDObPxRjIOcM2kmVWBeZTVwVm9UrxrqJdKw/view">
+                      <h3
+                        class="text-center font-heading text-2xl text-gray-900 hover:text-gray-700 group-hover:underline font-black">
+                        Funeral Program Site</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section class="pt-6 pb-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="mb-12 md:max-w-4xl mx-auto text-center">
+          <h2 class="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">
+            Events</h2>
+        </div>
+        <div class="flex flex-wrap -m-4 mb-6">
+          
+          <div class="w-full md:w-1/2 p-4">
+            <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+              <div class="text-center mx-auto">
+                <iframe src="https://calendar.google.com/calendar/embed?src=76ff01d0f977c617e93d1fbcc9af7a46df8e869b6cb4b97b02eddad8ae71a97d@group.calendar.google.com" width="100%" height="550" loading="lazy" frameborder="0" scrolling="no"></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <div class="w-full md:w-1/2 p-4">
+            <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+              <div class="text-center mx-auto">
+                <iframe src="https://calendar.google.com/calendar/embed?src=76ff01d0f977c617e93d1fbcc9af7a46df8e869b6cb4b97b02eddad8ae71a97d@group.calendar.google.com&mode=AGENDA" width="100%" height="550" loading="lazy" frameborder="0" scrolling="no"></iframe>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+
+    
+    
+    <section id="highlights" class="pt-6 pb-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="mb-12 md:max-w-4xl mx-auto text-center">
+          <h2 class="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">
+            Highlights</h2>
+        </div>
+        <div class="flex flex-wrap -m-4 mb-6">
+          
+          <div class="w-full md:w-1/2 p-4">
+            <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+              <div class="text-center mx-auto">
+                <iframe src="https://funeral-site.nyc3.cdn.digitaloceanspaces.com/funerals99/funeral-program-templates-collection.html" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <div class="w-full md:w-1/2 p-4">
+            <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+              <div class="text-center mx-auto">
+                <iframe src="https://funeral-site.s3.nl-ams.scw.cloud/funeral-program-templates-collection.html" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <div class="w-full md:w-1/2 p-4">
+            <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+              <div class="text-center mx-auto">
+                <iframe src="https://fps2024.s3.us-east.cloud-object-storage.appdomain.cloud/funeral-program-templates-collection.html" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <div class="w-full md:w-1/2 p-4">
+            <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+              <div class="text-center mx-auto">
+                <iframe src="https://carolegalassi.github.io/fps2024/funeral-program-templates-collection.html" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <div class="w-full md:w-1/2 p-4">
+            <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+              <div class="text-center mx-auto">
+                <iframe src="https://sites.google.com/view/funeral-site-collection/funeral-program-templates" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <div class="w-full md:w-1/2 p-4">
+            <div class="px-8 py-5 bg-white overflow-hidden rounded-3xl">
+              <div class="text-center mx-auto">
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <section id="contact-us" class="py-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="py-8 px-8 bg-white overflow-hidden border border-gray-100 rounded-3xl">
+          <div class="max-w-7xl mx-auto">
+            <div class="mb-10 md:max-w-md mx-auto text-center"><span
+                class="inline-block mb-4 text-sm text-blue-500 font-bold uppercase tracking-widest">Get Connected</span>
+              <h2 class="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-gray-900 font-black tracking-tight">Contact Us</h2>
+
+            </div>
+            <div class="flex flex-wrap -m-4">
+              <div class="w-full md:w-1/3 p-4">
+                <div class="p-10 text-center h-full bg-gray-100 rounded-3xl">
+                  <div class="flex items-center justify-center mb-6 w-12 h-12 mx-auto bg-white rounded-xl">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14 16C14 17.77 13.23 19.37 12 20.46C10.94 21.42 9.54 22 8 22C4.69 22 2 19.31 2 16C2 13.9753 3.01397 12.1814 4.5554 11.0973C4.80358 10.9228 5.1393 11.0422 5.27324 11.3144C6.21715 13.2332 7.95419 14.6699 10.02 15.23C10.65 15.41 11.31 15.5 12 15.5C12.4872 15.5 12.9539 15.4538 13.4074 15.3687C13.6958 15.3146 13.9828 15.4995 13.9955 15.7925C13.9985 15.862 14 15.9314 14 16Z"
+                        fill="#3B82F6"></path>
+                      <path
+                        d="M18 8C18 8.78 17.85 9.53 17.58 10.21C16.89 11.95 15.41 13.29 13.58 13.79C13.08 13.93 12.55 14 12 14C11.45 14 10.92 13.93 10.42 13.79C8.59 13.29 7.11 11.95 6.42 10.21C6.15 9.53 6 8.78 6 8C6 4.69 8.69 2 12 2C15.31 2 18 4.69 18 8Z"
+                        fill="#3B82F6"></path>
+                      <path
+                        d="M22 16C22 19.31 19.31 22 16 22C15.2555 22 14.5393 21.8643 13.8811 21.6141C13.5624 21.4929 13.503 21.0851 13.7248 20.8262C14.8668 19.4938 15.5 17.786 15.5 16C15.5 15.66 15.47 15.32 15.42 15V15C15.3902 14.8155 15.4844 14.6342 15.6478 14.5437C16.9719 13.8107 18.0532 12.6875 18.727 11.3153C18.8609 11.0427 19.1968 10.923 19.4452 11.0977C20.9863 12.1818 22 13.9755 22 16Z"
+                        fill="#3B82F6"></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-heading mb-2 text-xl text-gray-900 font-black">Chat With Our Team</h3>
+                  <p class="text-gray-500 font-bold">Funeral Program Site</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 p-4">
+                <div class="p-10 text-center h-full bg-gray-100 rounded-3xl">
+                  <div class="flex items-center justify-center mb-6 w-12 h-12 mx-auto bg-white rounded-xl">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14 16C14 17.77 13.23 19.37 12 20.46C10.94 21.42 9.54 22 8 22C4.69 22 2 19.31 2 16C2 13.9753 3.01397 12.1814 4.5554 11.0973C4.80358 10.9228 5.1393 11.0422 5.27324 11.3144C6.21715 13.2332 7.95419 14.6699 10.02 15.23C10.65 15.41 11.31 15.5 12 15.5C12.4872 15.5 12.9539 15.4538 13.4074 15.3687C13.6958 15.3146 13.9828 15.4995 13.9955 15.7925C13.9985 15.862 14 15.9314 14 16Z"
+                        fill="#3B82F6"></path>
+                      <path
+                        d="M18 8C18 8.78 17.85 9.53 17.58 10.21C16.89 11.95 15.41 13.29 13.58 13.79C13.08 13.93 12.55 14 12 14C11.45 14 10.92 13.93 10.42 13.79C8.59 13.29 7.11 11.95 6.42 10.21C6.15 9.53 6 8.78 6 8C6 4.69 8.69 2 12 2C15.31 2 18 4.69 18 8Z"
+                        fill="#3B82F6"></path>
+                      <path
+                        d="M22 16C22 19.31 19.31 22 16 22C15.2555 22 14.5393 21.8643 13.8811 21.6141C13.5624 21.4929 13.503 21.0851 13.7248 20.8262C14.8668 19.4938 15.5 17.786 15.5 16C15.5 15.66 15.47 15.32 15.42 15V15C15.3902 14.8155 15.4844 14.6342 15.6478 14.5437C16.9719 13.8107 18.0532 12.6875 18.727 11.3153C18.8609 11.0427 19.1968 10.923 19.4452 11.0977C20.9863 12.1818 22 13.9755 22 16Z"
+                        fill="#3B82F6"></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-heading mb-2 text-xl text-gray-900 font-black">Call Us</h3>
+                  <p class="text-gray-500 font-bold">Funeral Program Site</p>
+                  <p class="text-gray-500 font-bold">214-548-5418</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 p-4">
+                <div class="p-10 text-center h-full bg-gray-100 rounded-3xl">
+                  <div class="flex items-center justify-center mb-6 w-12 h-12 mx-auto bg-white rounded-xl">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14 16C14 17.77 13.23 19.37 12 20.46C10.94 21.42 9.54 22 8 22C4.69 22 2 19.31 2 16C2 13.9753 3.01397 12.1814 4.5554 11.0973C4.80358 10.9228 5.1393 11.0422 5.27324 11.3144C6.21715 13.2332 7.95419 14.6699 10.02 15.23C10.65 15.41 11.31 15.5 12 15.5C12.4872 15.5 12.9539 15.4538 13.4074 15.3687C13.6958 15.3146 13.9828 15.4995 13.9955 15.7925C13.9985 15.862 14 15.9314 14 16Z"
+                        fill="#3B82F6"></path>
+                      <path
+                        d="M18 8C18 8.78 17.85 9.53 17.58 10.21C16.89 11.95 15.41 13.29 13.58 13.79C13.08 13.93 12.55 14 12 14C11.45 14 10.92 13.93 10.42 13.79C8.59 13.29 7.11 11.95 6.42 10.21C6.15 9.53 6 8.78 6 8C6 4.69 8.69 2 12 2C15.31 2 18 4.69 18 8Z"
+                        fill="#3B82F6"></path>
+                      <path
+                        d="M22 16C22 19.31 19.31 22 16 22C15.2555 22 14.5393 21.8643 13.8811 21.6141C13.5624 21.4929 13.503 21.0851 13.7248 20.8262C14.8668 19.4938 15.5 17.786 15.5 16C15.5 15.66 15.47 15.32 15.42 15V15C15.3902 14.8155 15.4844 14.6342 15.6478 14.5437C16.9719 13.8107 18.0532 12.6875 18.727 11.3153C18.8609 11.0427 19.1968 10.923 19.4452 11.0977C20.9863 12.1818 22 13.9755 22 16Z"
+                        fill="#3B82F6"></path>
+                    </svg>
+                  </div>
+                  <h3 class="font-heading mb-2 text-xl text-gray-900 font-black">Address</h3>
+                  <p class="text-gray-500 font-bold">Funeral Program Site</p>
+                  <p class="text-gray-500 font-bold">6710 Virginia Parkway #215-120, McKinney Texas 75071</p>
+                  <p class="text-gray-500 font-bold">33.2005615</p>
+                  <p class="text-gray-500 font-bold">-96.7089992</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-10 bg-gray-50 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="py-8 px-8 bg-white rounded-3xl">
+          <div class="flex flex-col justify-center">
+            <a class="inline-block max-w-max mx-auto mb-1" href="#"></a>
+            <ul class="-m-6 mb-7 text-center">
+              <li class="inline-flex p-6"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold" href="#"
+                  contenteditable="false">Home</a></li>
+              <li class="inline-flex p-6"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold"
+                  href="#resources-images" contenteditable="false">Resources</a></li>
+              <li class="inline-flex p-6"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold"
+                  href="#essential-links" contenteditable="false">Links</a></li>
+              <li class="inline-flex p-6"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold"
+                  href="#highlights" contenteditable="false">Highlights</a></li>
+              <li class="inline-flex p-6"><a class="inline-block text-gray-500 hover:text-gray-600 font-bold"
+                  href="#contact-us">Contact Us</a></li>
+            </ul>
+
+            <p class="text-center font-bold"><span>Ⓒ Copyright. All rights reserved</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    
+    (function () {
+      var youtube = document.querySelectorAll(".youtube");
+      for (var i = 0; i < youtube.length; i++) {
+        var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/sddefault.jpg";
+
+        var image = new Image();
+        image.src = source;
+        image.addEventListener("load", function () {
+          youtube[i].appendChild(image);
+        }(i));
+
+        youtube[i].addEventListener("click", function () {
+
+          var iframe = document.createElement("iframe");
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("allowfullscreen", "");
+          iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+          this.innerHTML = "";
+          this.appendChild(iframe);
+        });
+      };
+    })();
+  </script>
+<center>
+<b>The Funeral Program Site</b>
+<p>For a complete overview of our funeral program designs, visit our <a href="https://storage.googleapis.com/fps2025/hub-funeral-program-site.html">funeral program site</a> page for more inspiration and DIY downloadable templates.</p></center>
+<iframe src="https://storage.googleapis.com/fps2025/hub-funeral-program-site.html" width="100%" height="800" style="border:none;"></iframe><p>
+<!-- Audio player: Funeral Program Templates Highlight -->
+<div style="max-width:700px;margin:1rem auto;padding:1rem;border:1px solid #e6e6e6;border-radius:12px;background:#fafafa;">
+  <p style="margin:0 0 .5rem 0;font-size:1.1rem;line-height:1.5;font-weight:500;">
+    Hear the Highlights of The Funeral Program Site Funeral Program Templates
+  </p>
+
+  <audio
+    controls
+    preload="metadata"
+    style="width:100%;height:40px;"
+    src="https://cdn.shopify.com/s/files/1/0556/4258/7328/files/funeral_program_templates_funeral_program_site.m4a?v=1758294615"
+    type="audio/mp4">
+      Your browser doesn’t support the audio element.
+  </audio>
+
+  <!-- Optional: direct download link -->
+  <div style="margin-top:.5rem;">
+    <a href="https://cdn.shopify.com/s/files/1/0556/4258/7328/files/funeral_program_templates_funeral_program_site.m4a?v=1758294615"
+       download
+       style="font-size:.9rem;text-decoration:underline;">
+      Download audio
+    </a>
+  </div>
+</div>
+
+</body>
+
+</html>
